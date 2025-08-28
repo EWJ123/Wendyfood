@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wendy Food</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    header {
+      background: url('https://images.pexels.com/photos/10543762/pexels-photo-10543762.jpeg?_gl=1*n27e0a*_ga*NTg1ODc3Mzg4LjE3NTYyMzEwNjE.*_ga_8JE65Q40S6*czE3NTYyMzEwNjEkbzEkZzEkdDE3NTYyMzExMTkkajIkbDAkaDA.') center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #E74C3C;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .food-card img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+
+      position: static;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">WENDYFOOD</a>
+
+      <!-- Navbar toggle (mobile menu button) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!--Search -->
+        <form id="SearchForm" class="d-flex mx-auto" role="search" style="width: 500px;">
+          <input id="SearchBox" class="form-control me-2" type="search" placeholder="Search food..."
+            aria-label="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+
+        <!-- Right: Foods dropdown -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="foodsSubmenu" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Foods
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="foodsSubmenu">
+              <li><a class="dropdown-item" href="taco.html" target="_blank">Tacos</a></li>
+              <li><a class="dropdown-item" href="satay.html" target="_blank">Satay</a></li>
+              <li><a class="dropdown-item" href="takoyaki.html" target="_blank">Takoyaki</a></li>
+              <li><a class="dropdown-item" href="mangostickyrice.html" target="_blank">Mango Sticky Rice</a></li>
+              <li><a class="dropdown-item" href="tteokbokki.html" target="_blank">Tteokbokki</a></li>
+              <li><a class="dropdown-item" href="panipuri.html" target="_blank">Pani Puri</a></li>
+              <li><a class="dropdown-item" href="shawarma.html" target="_blank">Shawarma</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About us</a>
+          </li>
+        </ul>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Home Section -->
+  <header id="home">
+    <div class="text-center">
+      <h1 class="display-3 fw-bold">Taste the Streets</h1>
+      <p class="lead">Discover the best street food around the world</p>
+    </div>
+  </header>
+
+  <!-- Food Section -->
+  <section id="food" class="container py-5">
+    <h2 class="text-center mb-4">Popular Street Foods</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <a href="Taco.html" style="text-decoration: none;">
+          <div class="card food-card shadow-sm">
+            <img src="Image/taco.jpg" class="card-img-top" alt="Tacos">
+            <div class="card-body">
+              <h5 class="card-title">Tacos</h5>
+              <p class="card-text">Spicy, flavorful tacos straight from Mexico.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-md-4">
+        <a href="Satay.html" style="text-decoration: none;">
+          <div class="card food-card shadow-sm">
+            <img src="Image/satay.jpg" class="card-img-top" alt="Satay">
+            <div class="card-body">
+              <h5 class="card-title">Satay</h5>
+              <p class="card-text">Tender skewered meat served with special sauce.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-md-4">
+        <a href="Satay.html" style="text-decoration: none;">
+          <div class="card food-card shadow-sm">
+            <img src="Image/takoyaki.jpg" class="card-img-top" alt="Takoyaki">
+            <div class="card-body">
+              <h5 class="card-title">Takoyaki</h5>
+              <p class="card-text">Crispy octopus balls topped with bonito flakes.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="text-center">
+      Wendy Food is a project website that features popular street foods from around the world.
+      Our goal is to share the rich culture and flavors of street food with everyone..
+    </p>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Wendy Food || Designed for UCCD2323 Project</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+    document.getElementById("SearchForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      let query = document.getElementById("SearchBox").value.toLowerCase().trim();
+      let pages = {
+        "tacos": "taco.html",
+        "taco": "taco.html",
+        "mexican tacos": "taco.html",
+        "satay": "satay.html",
+        "malaysian satay": "satay.html",
+        "sate": "satay.html",
+        "takoyaki": "takoyaki.html",
+        "japanese takoyaki": "takoyaki.html",
+        "mango sticky rice": "mangostickyrice.html",
+        "mangostickyrice": "mangostickyrice.html",
+        "tteokbokki": "tteokbokki.html",
+        "pani puri":"panipuri.html",
+        "panipuri":"panipuri.html",
+        "Shawarma":"shawarma.html",
+        "shawarma":"shawarma.html",
+      };
+
+      if (pages[query]) {
+        window.location.href = pages[query];
+      } else {
+        alert("Sorry, no page found for: " + query);
+      }
+    });
+
+
+    // localStorage
+    function saveVisit() {
+      let visits = localStorage.getItem('visits') || 0;
+      visits++;
+      localStorage.setItem('visits', visits);
+      console.log("You have visited this page " + visits + " times!");
+    }
+
+    window.onload = saveVisit;
+
+  </script>
+
+</body>
+
+</html>
