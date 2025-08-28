@@ -100,4 +100,9 @@ main {
   margin: 20px auto;              
   border-radius: 15px;         
   overflow: auto;  
+
     }
+
+.lead{
+  font-weight: bold;
+}
